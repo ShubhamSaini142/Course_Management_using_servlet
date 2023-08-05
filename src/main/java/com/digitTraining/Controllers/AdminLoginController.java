@@ -21,7 +21,10 @@ public class AdminLoginController extends HttpServlet{
 	         ad.setPassword(req.getParameter("password"));
 	         boolean x = ad.AdminLogin();
 	         if(x==true) {
-	        	 resp.sendRedirect("AdminLoginSuccess.html");
+	        	 resp.sendRedirect("adminHome.jsp");
+	         }
+	         else {
+	        	 resp.sendRedirect("AdminLoginFailed.html");
 	         }
 	}
 	
