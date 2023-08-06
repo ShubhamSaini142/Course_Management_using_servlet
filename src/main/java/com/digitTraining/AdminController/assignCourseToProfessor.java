@@ -1,6 +1,7 @@
 package com.digitTraining.AdminController;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -19,9 +20,13 @@ public class assignCourseToProfessor extends HttpServlet {
 	int cid = Integer.parseInt(req.getParameter("cid"));
 		boolean x = cm.assignCourseToProfessor(pid, cid);
 		if (x == true) {
-			resp.sendRedirect("StudentCreatedSuccessFully.html");
+//			resp.sendRedirect("StudentCreatedSuccessFully.html");
+			PrintWriter pw = resp.getWriter();
+			pw.println("Succuessfully assigned");
 		} else {
-			resp.sendRedirect("StudentCreationFailed.html");
+			PrintWriter pw = resp.getWriter();
+			pw.println("Succuessfully assigned");
+			
 		}
 	}
 	
