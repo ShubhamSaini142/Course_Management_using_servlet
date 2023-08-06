@@ -20,7 +20,7 @@ public class ProfessorController  extends HttpServlet{
 		HttpSession session = req.getSession(true);
 		boolean b = prof.profLogin();
 		if(b==true)
-		{
+		{     session.setAttribute("pid", prof.getPid());;
 			session.setAttribute("pname",prof.getPname());
 			resp.sendRedirect("profHome.jsp");
 		}

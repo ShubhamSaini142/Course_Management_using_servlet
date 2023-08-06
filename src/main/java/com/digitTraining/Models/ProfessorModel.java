@@ -8,8 +8,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
 
-
-
 public class ProfessorModel {
 
 	int pid;
@@ -86,6 +84,7 @@ public class ProfessorModel {
 			res = psmt.executeQuery();
 			int flag = 0;
 			while (res.next() == true) {
+				setPid(res.getInt("pid"));
 				if (res.getString(2).equals(pname) && res.getString(4).equals(password)) {
 					this.setPname(res.getString("pname"));
 					flag = 1;
@@ -94,6 +93,7 @@ public class ProfessorModel {
 				}
 			}
 			if (flag == 1) {
+
 				return true;
 			} else {
 				return false;
@@ -151,6 +151,27 @@ public class ProfessorModel {
 			e.printStackTrace();
 		}
 
+		return false;
+
+	}
+
+	public static boolean updateMarks(int assignment1, int assignment2, int sid) {
+        System.out.println(assignment1);
+        System.out.println(sid);
+		String sql1 = "update student set Assignment1 = ? , Assignment2 = ? where sid =?";
+		try {
+			PreparedStatement st = con.prepareStatement(sql1);
+			st.setInt(1, assignment1);
+			st.setInt(2, assignment2);
+			st.setInt(3, sid);
+			int x = st.executeUpdate();
+			if (x > 0) {
+				return true;
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return false;
 
 	}

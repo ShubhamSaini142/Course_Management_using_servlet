@@ -15,7 +15,7 @@
 	%>
 	<br>
 	<br>
-	<a href="#">1. Give marks to student</a><br><br>
+	<a href="viewAssignedStudent.jsp">1. Give marks to student</a><br><br>
 	<a href="LogoutController">6. Logout</a>
 </body>
 </html>

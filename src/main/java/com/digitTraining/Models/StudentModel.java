@@ -275,6 +275,32 @@ public class StudentModel {
 
 	}
 	
+	public boolean selectStudent(int sid) {
+		String sql3 = "select * from student where sid = ?";
+		try {
+			psmt = con.prepareStatement(sql3);
+			psmt.setInt(1, sid);
+			res = psmt.executeQuery();
+			int flag=0;
+			while(res.next() == true) {
+				setSname(res.getString("sname"));
+				 flag=1;
+			}
+//			 System.out.println(" in model "+ getAssignment2());
+			if(flag==1) {
+				return true;
+			}
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	
+		return false;
+		
+	}
+	
 
 	
 	
