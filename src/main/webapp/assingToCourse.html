@@ -1,9 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Add Student</title>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
 <style>
 body {
 font-family: Arial, sans-serif;
@@ -37,12 +36,10 @@ background-color: #00678A;
 </style>
 </head>
 <body>
-<div class="container">
-<h3>
-<% session = request.getSession(); %>
-Student <%= session.getAttribute("sname") %> added successfully!!
-</h3>
-<a href="adminHome.jsp">Go to Admin Home</a>
-</div>
+	<div class="container">
+		Success<br>
+		    <a href="adminHome.jsp" class="btn btn-redirect">Redirect to AdminPage</a>
+	</div>
+
 </body>
 </html>

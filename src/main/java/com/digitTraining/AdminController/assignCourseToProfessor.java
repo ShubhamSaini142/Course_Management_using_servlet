@@ -20,12 +20,10 @@ public class assignCourseToProfessor extends HttpServlet {
 	int cid = Integer.parseInt(req.getParameter("cid"));
 		boolean x = cm.assignCourseToProfessor(pid, cid);
 		if (x == true) {
-//			resp.sendRedirect("StudentCreatedSuccessFully.html");
-			PrintWriter pw = resp.getWriter();
-			pw.println("Succuessfully assigned");
+			resp.sendRedirect("assingToCourse.html");
+			
 		} else {
-			PrintWriter pw = resp.getWriter();
-			pw.println("Succuessfully assigned");
+			resp.sendRedirect("addProfFail.html");
 			
 		}
 	}

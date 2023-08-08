@@ -20,8 +20,8 @@
 				<th>Student ID</th>
 				<th>Student Name</th>
 				<th>Student Email</th>
-				<th>Assignment-1</th>
-				<th>Assignment-2</th>
+				<th>Marks-1</th>
+				<th>Marks-2</th>
 				<th>Course Id</th>
 				<th>Course Name</th>
 				<th>Professor Id</th>

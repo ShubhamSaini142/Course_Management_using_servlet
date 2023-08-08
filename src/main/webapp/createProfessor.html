@@ -1,20 +1,99 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <title>Banking Application Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Light gray background */
+            color: #333; /* Dark gray text color */
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff; /* White background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333; /* Dark gray heading color */
+        }
+
+        label {
+            font-weight: bold;
+            color: #555; /* Medium gray label text color */
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #008080; /* Dark teal button background color */
+            color: #fff; /* White button text color */
+            border: none;
+            border-radius: 4px;
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #006666; /* Lighter teal on hover */
+        }
+
+        .home-link {
+            text-align: center;
+            margin-top: 20px;
+            display: block;
+            color: #008080; /* Dark teal link color */
+            text-decoration: none;
+        }
+
+        .home-link:hover {
+            color: #006666; /* Lighter teal link color on hover */
+        }
+
+    </style>
+
 </head>
+
 <body>
-	<form action="createProfessor" method="post">
-<label>Enter ProfessorId</label>
-	<input type = "text" name="pid">
-<label>Enter the Name of Professor</label>
-<input type="text" name="pname">
-<label>Enter the Experience of Professor</label>
-<input type="text" name="exp">
-<label>Enter the Password of Professor</label>
-<input type="text" name="password">
-<input type = "submit">
-</form>
+   <form action="createProfessor" method="post">
+	   <h2>Add Professor</h2>
+		<label>Professor Id</label><br>
+		<input type="text" name="pid"><br><br>
+		<label>Professor Name</label><br>
+		<input type="text" name="pname"><br><br>
+		<label>Professor Experience</label><br>
+		<input type="text" name="exp"><br><br>
+		<label>Password</label><br>
+		<input type="text" name="password"><br><br>
+		<button type="submit" class="btn btn-primary btn-dark">Submit</button>
+	</form>
+		
+      
+    <a class="home-link" href="welcome.html">Go to Home Page.</a>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

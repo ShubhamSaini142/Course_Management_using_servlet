@@ -18,10 +18,10 @@ public class removeCourse extends HttpServlet {
 		CourseModel cm = new CourseModel();
 		boolean isCourseRemove = cm.removeProfessor(Integer.parseInt(req.getParameter("removecid")));
 		if (isCourseRemove == true) {
-			resp.sendRedirect("removeStuSuccess.jsp");
+			resp.sendRedirect("removeCourseSuccess.jsp");
 
 		} else {
-			resp.sendRedirect("removeStuFail.html");
+			resp.sendRedirect("removeCourseFail.html");
 		}
 	}
 }

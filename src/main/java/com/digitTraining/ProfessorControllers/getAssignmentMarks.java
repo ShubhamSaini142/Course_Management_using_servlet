@@ -24,8 +24,9 @@ public class getAssignmentMarks extends HttpServlet {
 		int sid = (int)  session.getAttribute("sid");
 		boolean x = prof.updateMarks(assignment1,assignment2,sid);
 		if(x==true) {
-			PrintWriter pw = resp.getWriter();
-			pw.println("Marks sended to student");
+//			PrintWriter pw = resp.getWriter();
+//			pw.println("Marks sended to student");
+			resp.sendRedirect("MarksUpdatedSuccessFully.html");
 		}
 
 	}

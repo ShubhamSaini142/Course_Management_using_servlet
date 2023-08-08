@@ -8,7 +8,82 @@
 <head>
     <meta charset="UTF-8">
     <title>Transaction History</title>
-    <link rel="stylesheet" type="text/css" href="sty.css">
+<style>
+
+
+@charset "ISO-8859-1";
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+a {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+  
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+ .home-link {
+            text-align: center;
+            margin-top: 20px;
+            display: block;
+            color: #008080; /* Dark teal link color */
+            text-decoration: none;
+            
+        }
+
+.home-link:hover {
+            color: #006666; /* Lighter teal link color on hover */
+        }
+
+</style>
 </head>
 <body>
     <div class="container">
@@ -76,12 +151,12 @@
             }
             %>
         </table>
-        <form action="assignCourseToProfessor">
+        <form action="assignCourseToProfessor" align = "center">
         <label>Enter CourseId to Select</label><br>
-        <input type = "text" name="cid"><br>
+        <input type = "text" name="cid"><br><br>
           <label>Enter ProfessorId to Select</label><br>
-        <input type = "text" name="pid"><br>
-        <input type="submit">
+        <input type = "text" name="pid"><br><br>
+        <center><input type="submit"  class = "home-link"></center>
         </form>
         
         
@@ -91,7 +166,7 @@
         
         
         <br>
-        <a href="adminHome.jsp">Go To Home</a>
+        <a href= "adminHome.jsp" class = "home-link" >Go To Home</a>
     </div>
 </body>
 </html>

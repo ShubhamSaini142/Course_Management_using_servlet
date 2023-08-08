@@ -8,6 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Transaction History</title>
+   
     <link rel="stylesheet" type="text/css" href="sty.css">
 </head>
 <body>

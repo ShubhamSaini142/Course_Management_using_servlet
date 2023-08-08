@@ -21,6 +21,7 @@ public class AdminLoginController extends HttpServlet{
 	         ad.setPassword(req.getParameter("password"));
 	         boolean x = ad.AdminLogin();
 	         if(x==true) {
+	        	 session.setAttribute("username",ad.getUsername());
 	        	 resp.sendRedirect("adminHome.jsp");
 	         }
 	         else {
