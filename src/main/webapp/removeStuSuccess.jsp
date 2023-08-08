@@ -47,7 +47,7 @@ background-color: #2980b9;
 <body>
 <div class="container">
 <h3>Student details Removed Successfully!</h3>
-<p>The selected Student has been successfully removed.</p>
+
 <a href="adminHome.jsp">Return to Admin Home</a>
 </div>
 </body>

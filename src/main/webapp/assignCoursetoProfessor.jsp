@@ -8,81 +8,52 @@
 <head>
     <meta charset="UTF-8">
     <title>Transaction History</title>
-<style>
-
-
-@charset "ISO-8859-1";
+<link rel="stylesheet" type="text/css" href="sty.css">
+        <style>
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    margin: 0;
-    padding: 0;
-    color: #333;
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+margin: 0;
+padding: 0;
 }
 
 .container {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+width: 80%;
+margin: auto;
+overflow: hidden;
+padding: 20px;
 }
 
-h1 {
-    text-align: center;
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
+
+
+label {
+font-weight: bold;
+display: block;
+margin-bottom: 10px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+input[type="text"] {
+width: 100%;
+padding: 10px;
+margin-top: 5px;
+border: 1px solid #ccc;
+border-radius: 3px;
+box-sizing: border-box;
 }
 
-th, td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ccc;
+input[type="submit"] {
+background-color: #4CAF50;
+color: white;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+border-radius: 3px;
+font-size: 16px;
 }
 
-th {
-    background-color: #f2f2f2;
+input[type="submit"]:hover {
+background-color: #45a049;
 }
-
-a {
-    display: block;
-    width: 100px;
-    margin: 0 auto;
-    padding: 10px;
-    text-align: center;
-  
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.2s ease;
-}
-
-a:hover {
-    background-color: #0056b3;
-}
-
- .home-link {
-            text-align: center;
-            margin-top: 20px;
-            display: block;
-            color: #008080; /* Dark teal link color */
-            text-decoration: none;
-            
-        }
-
-.home-link:hover {
-            color: #006666; /* Lighter teal link color on hover */
-        }
-
 </style>
 </head>
 <body>
@@ -151,16 +122,19 @@ a:hover {
             }
             %>
         </table>
-        <form action="assignCourseToProfessor" align = "center">
-        <label>Enter CourseId to Select</label><br>
-        <input type = "text" name="cid"><br><br>
-          <label>Enter ProfessorId to Select</label><br>
-        <input type = "text" name="pid"><br><br>
-        <center><input type="submit"  class = "home-link"></center>
+    
+        
+        
+        <div class="container">
+    <form action="assignCourseToProfessor" align = "center">
+        <label>Enter CourseId to Select</label>
+        <input type = "text" name="cid">
+          <label>Enter ProfessorId to Select</label>
+        <input type = "text" name="pid">
+        <br>
+       <br> <center><input type="submit"  class = "home-link"></center>
         </form>
-        
-        
-        
+</div>
         
         
         

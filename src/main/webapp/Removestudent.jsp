@@ -9,6 +9,55 @@
     <meta charset="UTF-8">
     <title>Transaction History</title>
     <link rel="stylesheet" type="text/css" href="sty.css">
+    
+    
+    
+    <style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+margin: 0;
+padding: 0;
+}
+
+.container {
+width: 80%;
+margin: auto;
+overflow: hidden;
+padding: 20px;
+}
+
+
+
+label {
+font-weight: bold;
+display: block;
+margin-bottom: 10px;
+}
+
+input[type="text"] {
+width: 100%;
+padding: 10px;
+margin-top: 5px;
+border: 1px solid #ccc;
+border-radius: 3px;
+box-sizing: border-box;
+}
+
+input[type="submit"] {
+background-color: #4CAF50;
+color: white;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+border-radius: 3px;
+font-size: 16px;
+}
+
+input[type="submit"]:hover {
+background-color: #45a049;
+}
+</style>
 </head>
 <body>
     <div class="container">
@@ -44,11 +93,15 @@
             %>
         </table>
         <br>
-  <form action = "removeStudent">
-	<label>Enter the Student Id</label>
-	<input type="text" name="removesid">
-	<input type = "submit">
+<div class="container">
+<form action="removeStudent">
+<label>Enter the Student Id</label>
+<input type="text" name="removesid" placeholder="Student ID"><br>
+<br><input type="submit" value="Remove Student">
 </form>
+</div>
+<br>
+  <a href="adminHome.jsp">Go To Home</a>
     </div>
 </body>
 </html>
