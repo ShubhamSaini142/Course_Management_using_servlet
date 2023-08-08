@@ -43,6 +43,16 @@ Inside give-marks
 <img width="960" alt="image" src="https://github.com/ShubhamSaini142/Course_Management_using_servlet/assets/61548503/6a41d92b-f9f4-4e89-84b6-29f7762d45c2">
 
 module 3, Student
+Inside student module, mainpage
 
+<img width="960" alt="image" src="https://github.com/ShubhamSaini142/Course_Management_using_servlet/assets/61548503/9441821a-5a95-47c2-84dd-9722ad166a1a">
+
+Enroll course , in student
+
+<img width="960" alt="image" src="https://github.com/ShubhamSaini142/Course_Management_using_servlet/assets/61548503/ff179cbc-b686-4cc0-8393-f33d687cdfef">
+
+ScoreCard , in student
+
+<img width="960" alt="image" src="https://github.com/ShubhamSaini142/Course_Management_using_servlet/assets/61548503/72b5d237-aba6-45c6-91ea-ae9cf9eeca24">
 
 
