@@ -1,58 +1,76 @@
 # Course_Management_using_servlet
 This is digit training coursemanagement project using Servlets.
 
+This is a Course management system web application built using  MVC and Servlets. The application have different functionnalities for admin, student and professor that allows users  to enroll, view , add , etc.
+
+<img width="960" alt="image" src="https://github.com/ShubhamSaini142/Course_Management_using_servlet/assets/61548503/7430eb1f-5234-404a-a067-592544b34818">
 
 
-Main Page
-<img width="960" alt="image" src="https://github.com/ShubhamSaini142/Course_Management_using_servlet/assets/61548503/08ac0a6a-c588-4bc1-83a4-bfe9a1da051a">
+ 
+
+📝 Table of Contents
+About
+Features
+Deployment
+Usage
+Authors
+Acknowledgments
+
+ 
+
+🧐 About
+A course a management system(cms) is a collection of software tools providing an online environment for course interaction. A cms typically includes a variety of online tools and environment.
+
+ 
+
+Technology
+Jsp
+MVC
+Servlets
+
+ 
+
+Tools:
+Eclipse IDE
+TOMCAT
+SQLYOG
+
+ 
+
+Features
 
 
-Admin and Others login
-<img width="960" alt="image" src="https://github.com/ShubhamSaini142/Course_Management_using_servlet/assets/61548503/6a3b56aa-2407-4207-b39b-b52cdd98f455">
+-> Admin 
+    - Add can student Professor and course
+    - Remove can student Professor and course
+    - View can student Professor and course
+    - Assign course to a professor
 
-Module 1 , AdminServices
+  <img width="960" alt="image" src="https://github.com/ShubhamSaini142/Course_Management_using_servlet/assets/61548503/ab7a8c33-d7d5-4d5f-bf0e-4dc6407eed13">
 
-<img width="960" alt="image" src="https://github.com/ShubhamSaini142/Course_Management_using_servlet/assets/61548503/dc07ac8d-632b-42fb-8aa2-c1c11bfc1eab">
+  
 
-Inside Student-Registration , Same for Professor and Course Registration
+    
+-> Student 
+    - Enroll in a course
+    - View scores
 
-<img width="960" alt="image" src="https://github.com/ShubhamSaini142/Course_Management_using_servlet/assets/61548503/04638883-3342-4913-9f1e-c31d6f82540c">
-
-Inside Student-Deletion , Same for Professor and Course 
-
-<img width="960" alt="image" src="https://github.com/ShubhamSaini142/Course_Management_using_servlet/assets/61548503/fc50ff87-f2c0-4f93-82e6-e961f2af0ed6">
-
-Inside Course-Veiw , Same for student and professor
-
-<img width="960" alt="image" src="https://github.com/ShubhamSaini142/Course_Management_using_servlet/assets/61548503/5739a9db-c362-4cdc-90a4-c09ef273f559">
-
-Assign Course to professor
-
-<img width="960" alt="image" src="https://github.com/ShubhamSaini142/Course_Management_using_servlet/assets/61548503/01181407-66dd-4637-b03c-00fce58cf9ed">
-
-Module 2 , Professor
-Inside professor module , mainpage
-
-<img width="960" alt="image" src="https://github.com/ShubhamSaini142/Course_Management_using_servlet/assets/61548503/5315ab93-b41d-4249-b602-f23478957ffa">
+  <img width="960" alt="image" src="https://github.com/ShubhamSaini142/Course_Management_using_servlet/assets/61548503/d9b91fe8-aaad-4425-aa6b-371e3539eb08">
 
 
-Inside give-marks 
 
-<img width="960" alt="image" src="https://github.com/ShubhamSaini142/Course_Management_using_servlet/assets/61548503/c58709c5-4eab-47be-95c9-3ec6bf510318">
 
-<img width="960" alt="image" src="https://github.com/ShubhamSaini142/Course_Management_using_servlet/assets/61548503/6a41d92b-f9f4-4e89-84b6-29f7762d45c2">
 
-module 3, Student
-Inside student module, mainpage
+-> Professor 
+    - Give  marks to student
 
-<img width="960" alt="image" src="https://github.com/ShubhamSaini142/Course_Management_using_servlet/assets/61548503/9441821a-5a95-47c2-84dd-9722ad166a1a">
+  <img width="960" alt="image" src="https://github.com/ShubhamSaini142/Course_Management_using_servlet/assets/61548503/f0d81850-e155-4332-b15f-50d7ce94e539">
 
-Enroll course , in student
 
-<img width="960" alt="image" src="https://github.com/ShubhamSaini142/Course_Management_using_servlet/assets/61548503/ff179cbc-b686-4cc0-8393-f33d687cdfef">
+ 
 
-ScoreCard , in student
-
-<img width="960" alt="image" src="https://github.com/ShubhamSaini142/Course_Management_using_servlet/assets/61548503/72b5d237-aba6-45c6-91ea-ae9cf9eeca24">
+🎉 Acknowledgements
+Credit - @DigitInsurance
+Instructor- @Bheemesh
 
 
